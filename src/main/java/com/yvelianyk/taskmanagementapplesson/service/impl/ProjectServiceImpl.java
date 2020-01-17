@@ -1,15 +1,20 @@
-package com.yvelianyk.service.impl;
+package com.yvelianyk.taskmanagementapplesson.service.impl;
 
-import com.yvelianyk.persistence.model.Project;
-import com.yvelianyk.persistence.repository.IProjectRepository;
-import com.yvelianyk.service.IProjectService;
+import com.yvelianyk.taskmanagementapplesson.persistence.model.Project;
+import com.yvelianyk.taskmanagementapplesson.persistence.repository.IProjectRepository;
+import com.yvelianyk.taskmanagementapplesson.service.IProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class ProjectServiceImpl implements IProjectService {
 
-    @Autowired
+    public ProjectServiceImpl() {
+        super();
+    }
+
     private IProjectRepository projectRepo;
 
     @Override

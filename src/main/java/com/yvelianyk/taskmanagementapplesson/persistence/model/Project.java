@@ -1,4 +1,4 @@
-package com.yvelianyk.persistence.model;
+package com.yvelianyk.taskmanagementapplesson.persistence.model;
 
 import java.time.LocalDate;
 import java.util.Objects;

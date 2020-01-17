@@ -1,6 +1,6 @@
-package com.yvelianyk.persistence.repository;
+package com.yvelianyk.taskmanagementapplesson.persistence.repository;
 
-import com.yvelianyk.persistence.model.Project;
+import com.yvelianyk.taskmanagementapplesson.persistence.model.Project;
 
 import java.util.Optional;
 

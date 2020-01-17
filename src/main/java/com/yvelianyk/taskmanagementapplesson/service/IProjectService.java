@@ -1,6 +1,6 @@
-package com.yvelianyk.service;
+package com.yvelianyk.taskmanagementapplesson.service;
 
-import com.yvelianyk.persistence.model.Project;
+import com.yvelianyk.taskmanagementapplesson.persistence.model.Project;
 
 import java.util.Optional;
 
