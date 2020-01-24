@@ -8,6 +8,7 @@ public class Project {
     private Long id;
     private String name;
     private LocalDate dateCreated;
+    private String internalId;
 
     public Project(Long id, String name, LocalDate dateCreated) {
         this.id = id;
@@ -67,5 +68,11 @@ public class Project {
                 '}';
     }
 
+    public String getInternalId() {
+        return internalId;
+    }
 
+    public void setInternalId(String internalId) {
+        this.internalId = internalId;
+    }
 }

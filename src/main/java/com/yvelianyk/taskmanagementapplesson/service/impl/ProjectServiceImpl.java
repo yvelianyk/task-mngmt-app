@@ -13,7 +13,7 @@ public class ProjectServiceImpl implements IProjectService {
 
     private IProjectRepository projectRepository;
 
-    public ProjectServiceImpl(@Qualifier("projectRepositoryImpl2") IProjectRepository projectRepository) {
+    public ProjectServiceImpl(IProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
     }
 

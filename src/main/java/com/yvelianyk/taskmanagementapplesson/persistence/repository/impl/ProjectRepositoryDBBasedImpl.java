@@ -2,6 +2,7 @@ package com.yvelianyk.taskmanagementapplesson.persistence.repository.impl;
 
 import com.yvelianyk.taskmanagementapplesson.persistence.model.Project;
 import com.yvelianyk.taskmanagementapplesson.persistence.repository.IProjectRepository;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
@@ -10,9 +11,14 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class ProjectRepositoryImpl2 implements IProjectRepository {
+@Profile("prod")
+public class ProjectRepositoryDBBasedImpl implements IProjectRepository {
 
     List<Project> projects = new ArrayList<>();
+
+    public ProjectRepositoryDBBasedImpl() {
+        super();
+    }
 
     @Override
     public Optional<Project> findById(Long id) {
